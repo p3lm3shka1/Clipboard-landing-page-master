@@ -257,25 +257,27 @@ body {
 }
 
 .footer-section {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
   background: hsla(201, 11%, 66%, 0.1);
   max-width: 100%;
   padding: 2rem;
 }
-.footer-section .logo-col-1 img {
-  width: 80%;
-}
-.footer-section .contacts {
+.footer-section .logo-col-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
-  gap: 2rem;
+  justify-content: center;
+  gap: 0 4rem;
+}
+.footer-section .logo-col-1 img {
+  width: 10%;
+}
+.footer-section .contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 .footer-section .contacts .contact-col-2,
 .footer-section .contacts .contact-col-3,
@@ -285,6 +287,9 @@ body {
   align-items: center;
   flex-direction: column;
   list-style: none;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .footer-section .contacts a {
   text-decoration: none;
@@ -303,6 +308,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  justify-content: center;
+}
+.footer-section .logos-col-5 img {
+  display: block;
 }
 .footer-section .logos-col-5 img:hover {
   background: hsl(171, 66%, 44%);
@@ -470,26 +479,27 @@ body {
     padding: 1rem 5rem;
   }
   .footer-section {
-    display: flex;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 2rem;
+  }
+  .footer-section .logo-col-1 {
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
   }
   .footer-section .logo-col-1 img {
-    width: 80%;
-    padding: 1rem;
+    width: 30%;
   }
   .footer-section .contacts {
-    flex-direction: row;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    align-items: center;
   }
   .footer-section .contacts .contact-col-2,
   .footer-section .contacts .contact-col-3,
   .footer-section .contacts .contact-col-4 {
-    padding-bottom: 2rem;
+    gap: 1rem 0;
+    align-items: center;
   }
   .footer-section .contacts .logo-col-5 {
-    padding: 4rem 0;
-    gap: 4rem;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */

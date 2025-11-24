@@ -202,30 +202,36 @@ body {
 }
 //footer
 .footer-section {
-  @include flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  @include grid;
+  grid-template-columns: $grid-col;
+  align-items: center;
   background: hsla(201, 11%, 66%, 0.1);
   max-width: $w-full;
   padding: $pad-m;
 
   .logo-col-1 {
+    @include flex;
+    justify-content: center;
+    gap: 0 $gap-l;
+
     img {
-      width: $w-l;
+      width: 10%;
     }
   }
   .contacts {
-    @include flex;
-    align-items: flex-start;
+    @include grid;
+    grid-template-columns: $grid-col;
+    gap: $gap-s;
 
-    gap: $gap-m;
     .contact-col-2,
     .contact-col-3,
     .contact-col-4 {
       @include flex;
       flex-direction: column;
       list-style: none;
+      gap: $gap-s;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
     a {
       text-decoration: none;
@@ -239,7 +245,10 @@ body {
   .logos-col-5 {
     @include flex;
     gap: $gap-s;
+    justify-content: center;
+
     img {
+      display: block;
       &:hover {
         background: $green-500;
       }
@@ -391,35 +400,30 @@ body {
     }
   }
   .footer-section {
-    @include flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+    grid-template-columns: repeat(1, 3fr);
+    gap: $gap-m;
 
     .logo-col-1 {
+      justify-content: center;
       img {
-        width: $w-l;
-        padding: $pad-s;
+        width: $w-s;
       }
     }
+
     .contacts {
-      flex-direction: row;
+      grid-template-columns: 1fr;
+      row-gap: $gap-s;
+      align-items: center;
 
       .contact-col-2,
       .contact-col-3,
       .contact-col-4 {
-        padding-bottom: $pad-m;
+        gap: $gap-s 0;
+        align-items: center;
       }
       .logo-col-5 {
-        padding: $pad-xl 0;
-        gap: $gap-l;
+        justify-content: center;
       }
     }
   }
 }
-
-
-
-
-
-
-
