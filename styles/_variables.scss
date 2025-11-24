@@ -1,0 +1,37 @@
+// font
+$font: "Bai Jamjuree", sans-serif;
+$font-w-s: 400;
+$font-w-m: 600;
+
+// colors
+$green-500: hsl(171, 66%, 44%);
+$blue-100: hsl(233, 100%, 69%);
+$gray-700: hsl(210, 10%, 33%);
+$gray-500: hsl(201, 11%, 66%);
+
+//padding
+$pad-s: 1rem;
+$pad-m: 2rem;
+$pad-l: 3rem;
+$pad-xl: 4rem;
+$pad-xxl: 5rem;
+$pad-all: $pad-xxl 0 $pad-xxl 0;
+
+//gap
+$gap-s: 1rem;
+$gap-m: 2rem;
+$gap-l: 4rem;
+$gap-xl: 5rem;
+
+// width
+$w-s: 30%;
+$w-m: 50%;
+$w-l: 80%;
+$w-full: 100%;
+
+//opacity
+$op-h: 0.9;
+$op-p: 0.7;
+
+//media
+$mobile: 480px;

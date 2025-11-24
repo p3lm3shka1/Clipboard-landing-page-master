@@ -1,0 +1,495 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 100%;
+}
+
+.logo-bg {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("/images/bg-header-desktop.png") center/cover no-repeat;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.logo-bg .logo {
+  padding: 2rem 0 3rem 0;
+}
+.logo-bg h1 {
+  color: hsl(210, 10%, 33%);
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.logo-bg p {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+  width: 30%;
+}
+.logo-bg .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.logo-bg .btn-group .btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.logo-bg .btn-group .ios {
+  background: hsl(171, 66%, 44%);
+}
+.logo-bg .btn-group .ios:hover {
+  opacity: 0.7;
+}
+.logo-bg .btn-group .mac {
+  background: hsl(233, 100%, 69%);
+}
+.logo-bg .btn-group .mac:hover {
+  opacity: 0.7;
+}
+
+.snippets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
+  max-width: 100%;
+}
+.snippets h1 {
+  color: hsl(210, 10%, 33%);
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.snippets p {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+  width: 30%;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 5rem 0;
+  align-items: end;
+  padding: 5rem 0 5rem 0;
+}
+.grid-hero .pc-img {
+  grid-row: 1/4;
+  padding-left: 4rem;
+  max-width: 100%;
+}
+.grid-hero .pc-img img {
+  width: 90%;
+  display: block;
+}
+.grid-hero .title {
+  justify-items: left;
+}
+.grid-hero .title h2 {
+  color: hsl(210, 10%, 33%);
+  padding-top: 4rem;
+  opacity: 0.9;
+}
+.grid-hero .title p {
+  width: 30%;
+  color: hsl(201, 11%, 66%);
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.mid-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
+  max-width: 100%;
+}
+.mid-sec h1 {
+  color: hsl(210, 10%, 33%);
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.mid-sec p {
+  width: 30%;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.mid-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 5rem 0 5rem 0;
+}
+.mid-img img {
+  width: 50%;
+  display: block;
+}
+
+.grid-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 4rem;
+}
+.grid-cards .cards-w {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+}
+.grid-cards .cards-w .card {
+  width: 100%;
+}
+.grid-cards .cards-w .card img {
+  padding-bottom: 1rem;
+}
+.grid-cards .cards-w .card h2 {
+  color: hsl(210, 10%, 33%);
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.grid-cards .cards-w .card p {
+  width: 50%;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.brands {
+  padding: 5rem 0 5rem 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands .brands-w {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+}
+.brands .brands-w img {
+  width: 50%;
+  justify-self: center;
+}
+
+.bottom-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
+}
+.bottom-sec h1 {
+  color: hsl(210, 10%, 33%);
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.bottom-sec p {
+  width: 30%;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+  font-weight: 600;
+}
+.bottom-sec .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.bottom-sec .btn-group .btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.bottom-sec .btn-group .ios {
+  background: hsl(171, 66%, 44%);
+}
+.bottom-sec .btn-group .ios:hover {
+  opacity: 0.7;
+}
+.bottom-sec .btn-group .mac {
+  background: hsl(233, 100%, 69%);
+}
+.bottom-sec .btn-group .mac:hover {
+  opacity: 0.7;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background: hsla(201, 11%, 66%, 0.1);
+  max-width: 100%;
+  padding: 2rem;
+}
+.footer-section .logo-col-1 img {
+  width: 80%;
+}
+.footer-section .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.footer-section .contacts .contact-col-2,
+.footer-section .contacts .contact-col-3,
+.footer-section .contacts .contact-col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.footer-section .contacts a {
+  text-decoration: none;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+  opacity: 1;
+}
+.footer-section .contacts a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer-section .logos-col-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-section .logos-col-5 img:hover {
+  background: hsl(171, 66%, 44%);
+}
+
+.attribution {
+  background: hsla(201, 11%, 66%, 0.1);
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(171, 66%, 44%);
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .logo-bg {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("/images/bg-header-mobile.png") center/cover no-repeat;
+    padding: 4rem 0 2rem 0;
+    max-width: 100%;
+  }
+  .logo-bg h1 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+  }
+  .logo-bg p {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+  }
+  .logo-bg .btn-group {
+    flex-direction: column;
+  }
+  .logo-bg .btn-group .btn {
+    padding: 1rem 5rem;
+  }
+  .snippets {
+    text-align: center;
+  }
+  .snippets h1 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+  }
+  .snippets p {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+  }
+  .grid-hero {
+    grid-template-columns: 1fr;
+    padding: 1rem 0 5rem 0;
+  }
+  .grid-hero .pc-img {
+    width: 80%;
+  }
+  .grid-hero .title {
+    text-align: center;
+    justify-items: center;
+  }
+  .grid-hero .title h2 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+  }
+  .grid-hero .title p {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+  }
+  .mid-sec {
+    text-align: center;
+  }
+  .mid-sec h1 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+  }
+  .mid-sec p {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+  }
+  .mid-img {
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+  }
+  .mid-img img {
+    width: 80%;
+  }
+  .grid-cards {
+    padding: 1rem 0 5rem 0;
+  }
+  .grid-cards .cards-w {
+    grid-template-columns: 1fr;
+  }
+  .grid-cards .cards-w .card {
+    width: 100%;
+  }
+  .grid-cards .cards-w .card img {
+    padding: 2rem 0;
+  }
+  .grid-cards .cards-w .card h2 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+  }
+  .grid-cards .cards-w .card p {
+    width: 80%;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .brands .brands-w {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+  .brands .brands-w img {
+    width: 50%;
+  }
+  .bottom-sec {
+    text-align: center;
+  }
+  .bottom-sec h1 {
+    color: hsl(210, 10%, 33%);
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+  }
+  .bottom-sec p {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+  }
+  .bottom-sec .btn-group {
+    flex-direction: column;
+  }
+  .bottom-sec .btn-group .btn {
+    padding: 1rem 5rem;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .footer-section .logo-col-1 img {
+    width: 80%;
+    padding: 1rem;
+  }
+  .footer-section .contacts {
+    flex-direction: row;
+  }
+  .footer-section .contacts .contact-col-2,
+  .footer-section .contacts .contact-col-3,
+  .footer-section .contacts .contact-col-4 {
+    padding-bottom: 2rem;
+  }
+  .footer-section .contacts .logo-col-5 {
+    padding: 4rem 0;
+    gap: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */

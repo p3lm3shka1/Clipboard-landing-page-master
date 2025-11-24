@@ -1,0 +1,95 @@
+// flexbox
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//grid template
+@mixin grid {
+  display: grid;
+}
+
+// body template
+@mixin body-template {
+  padding: 0;
+  margin: 0 auto;
+  font-family: $font;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 100%;
+}
+
+// buttons
+@mixin btn-template {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+@mixin ios-btn {
+  background: $green-500;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@mixin mac-btn {
+  background: $blue-100;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// texts templates
+@mixin h1-temp {
+  color: $gray-700;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+@mixin h2-temp {
+  color: $gray-700;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+@mixin p-temp {
+  text-align: center;
+  color: $gray-500;
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+// responsive 480px
+@mixin respond {
+  @media ($mobile) {
+  }
+}
+
+@mixin h1-respond {
+  color: $gray-700;
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+@mixin h2-respond {
+  color: $gray-700;
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+@mixin p-respond {
+  text-align: center;
+  color: $gray-700;
+  line-height: 1.6;
+  font-weight: 400;
+}

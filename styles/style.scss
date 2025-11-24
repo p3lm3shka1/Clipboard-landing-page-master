@@ -1,0 +1,418 @@
+// mixins
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body {
+  @include body-template;
+}
+// background
+.logo-bg {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url("/images/bg-header-desktop.png") center/cover no-repeat;
+  padding: $pad-xl 0 $pad-m 0;
+
+  @include flex;
+  flex-direction: column;
+  max-width: $w-full;
+
+  .logo {
+    padding: $pad-m 0 $pad-l 0;
+  }
+
+  h1 {
+    @include h1-temp;
+  }
+  p {
+    @include p-temp;
+    width: $w-s;
+  }
+  .btn-group {
+    @include flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: $pad-m 0;
+
+    .btn {
+      @include btn-template;
+    }
+    .ios {
+      @include ios-btn;
+    }
+    .mac {
+      @include mac-btn;
+    }
+  }
+}
+//section
+.snippets {
+  @include flex;
+  flex-direction: column;
+  padding: $pad-all;
+  max-width: $w-full;
+
+  h1 {
+    @include h1-temp;
+  }
+  p {
+    @include p-temp;
+    width: $w-s;
+  }
+}
+// grid-hero
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: $gap-xl 0;
+  align-items: end;
+  padding: $pad-all;
+
+  .pc-img {
+    grid-row: 1 / 4;
+    padding-left: $pad-xl;
+    max-width: $w-full;
+
+    img {
+      width: 90%;
+      display: block;
+    }
+  }
+  .title {
+    justify-items: left;
+
+    h2 {
+      color: $gray-700;
+      padding-top: $pad-xl;
+      opacity: $op-h;
+    }
+    p {
+      width: $w-s;
+      color: $gray-500;
+      opacity: $op-p;
+      font-weight: $font-w-m;
+    }
+  }
+}
+// middle section
+.mid-sec {
+  @include flex;
+  flex-direction: column;
+  padding: $pad-all;
+  max-width: $w-full;
+
+  h1 {
+    @include h1-temp;
+  }
+  p {
+    width: $w-s;
+    @include p-temp;
+  }
+}
+// middle image
+.mid-img {
+  @include flex;
+  max-width: $w-full;
+  padding: $pad-all;
+  img {
+    width: $w-m;
+    display: block;
+  }
+}
+//grid cards
+.grid-cards {
+  @include flex;
+  max-width: $w-full;
+  padding-bottom: $pad-xl;
+
+  .cards-w {
+    @include grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: $w-l;
+    .card {
+      width: $w-full;
+
+      img {
+        padding-bottom: $pad-s;
+      }
+      h2 {
+        @include h2-temp;
+      }
+      p {
+        width: $w-m;
+        @include p-temp;
+        margin: 0 auto;
+        padding-top: $pad-s;
+      }
+    }
+  }
+}
+// brands section
+.brands {
+  padding: $pad-all;
+  max-width: $w-full;
+  @include flex;
+
+  .brands-w {
+    @include grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: $w-l;
+
+    img {
+      width: $w-m;
+      justify-self: center;
+    }
+  }
+}
+// bottom section
+.bottom-sec {
+  @include flex;
+  flex-direction: column;
+  padding: $pad-all;
+
+  h1 {
+    @include h1-temp;
+  }
+  p {
+    width: $w-s;
+    @include p-temp;
+    font-weight: 600;
+  }
+  .btn-group {
+    @include flex;
+    flex-direction: row;
+    gap: $gap-s;
+    padding: $pad-m 0;
+
+    .btn {
+      @include btn-template;
+    }
+    .ios {
+      @include ios-btn;
+    }
+    .mac {
+      @include mac-btn;
+    }
+  }
+}
+//footer
+.footer-section {
+  @include flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background: hsla(201, 11%, 66%, 0.1);
+  max-width: $w-full;
+  padding: $pad-m;
+
+  .logo-col-1 {
+    img {
+      width: $w-l;
+    }
+  }
+  .contacts {
+    @include flex;
+    align-items: flex-start;
+
+    gap: $gap-m;
+    .contact-col-2,
+    .contact-col-3,
+    .contact-col-4 {
+      @include flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      @include p-temp;
+      opacity: 1;
+      &:hover {
+        color: $green-500;
+      }
+    }
+  }
+  .logos-col-5 {
+    @include flex;
+    gap: $gap-s;
+    img {
+      &:hover {
+        background: $green-500;
+      }
+    }
+  }
+}
+
+// attribution
+.attribution {
+  background: hsla(201, 11%, 66%, 0.1);
+  font-size: 1rem;
+  text-align: center;
+  font-family: $font;
+  margin: 0 auto;
+  padding: $pad-s;
+  a {
+    color: $green-500;
+    text-decoration: none;
+  }
+}
+
+//media
+@media (max-width: 480px) {
+  .logo-bg {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url("/images/bg-header-mobile.png") center/cover no-repeat;
+    padding: $pad-xl 0 $pad-m 0;
+    max-width: $w-full;
+
+    h1 {
+      @include h1-respond;
+      width: $w-l;
+    }
+    p {
+      @include p-respond;
+      width: $w-l;
+    }
+    .btn-group {
+      flex-direction: column;
+      .btn {
+        padding: 1rem 5rem;
+      }
+    }
+  }
+  .snippets {
+    text-align: center;
+
+    h1 {
+      @include h1-respond;
+      width: $w-l;
+    }
+    p {
+      @include p-respond;
+      width: $w-l;
+    }
+  }
+  .grid-hero {
+    grid-template-columns: 1fr;
+    padding: 1rem 0 5rem 0;
+
+    .pc-img {
+      width: $w-l;
+    }
+    .title {
+      text-align: center;
+      justify-items: center;
+      h2 {
+        @include h2-respond;
+      }
+      p {
+        @include p-respond;
+        width: $w-l;
+      }
+    }
+  }
+  .mid-sec {
+    text-align: center;
+
+    h1 {
+      @include h1-respond;
+      width: $w-l;
+    }
+    p {
+      @include p-respond;
+      width: $w-l;
+    }
+  }
+  .mid-img {
+    width: $w-full;
+    padding: 2rem 0 2rem 0;
+    img {
+      width: $w-l;
+    }
+  }
+  .grid-cards {
+    padding: 1rem 0 5rem 0;
+
+    .cards-w {
+      grid-template-columns: 1fr;
+      .card {
+        width: $w-full;
+
+        img {
+          padding: $pad-m 0;
+        }
+        h2 {
+          @include h2-respond;
+        }
+        p {
+          width: $w-l;
+          @include p-respond;
+          margin: 0 auto;
+          padding: $pad-m 0;
+        }
+      }
+    }
+  }
+  .brands {
+    .brands-w {
+      grid-template-columns: 1fr;
+      gap: 8rem;
+
+      img {
+        width: $w-m;
+      }
+    }
+  }
+  .bottom-sec {
+    text-align: center;
+
+    h1 {
+      @include h1-respond;
+      width: $w-l;
+    }
+    p {
+      @include p-respond;
+      width: $w-l;
+    }
+
+    .btn-group {
+      flex-direction: column;
+      .btn {
+        padding: 1rem 5rem;
+      }
+    }
+  }
+  .footer-section {
+    @include flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+    .logo-col-1 {
+      img {
+        width: $w-l;
+        padding: $pad-s;
+      }
+    }
+    .contacts {
+      flex-direction: row;
+
+      .contact-col-2,
+      .contact-col-3,
+      .contact-col-4 {
+        padding-bottom: $pad-m;
+      }
+      .logo-col-5 {
+        padding: $pad-xl 0;
+        gap: $gap-l;
+      }
+    }
+  }
+}
