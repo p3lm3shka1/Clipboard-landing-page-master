@@ -8,7 +8,7 @@ body {
 }
 
 .logo-bg {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("/images/bg-header-desktop.png") center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("../images/bg-header-desktop.png") center/cover no-repeat;
   padding: 4rem 0 2rem 0;
   display: flex;
   justify-content: center;
@@ -323,7 +323,7 @@ body {
 
 @media (max-width: 480px) {
   .logo-bg {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("/images/bg-header-mobile.png") center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%), url("../images/bg-header-mobile.png") center/cover no-repeat;
     padding: 4rem 0 2rem 0;
     max-width: 100%;
   }
