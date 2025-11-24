@@ -2,22 +2,22 @@
 
 This is a solution to the [Clipboard landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-#Links
+# Links
 
 [Repository URL](https://github.com/p3lm3shka1/Clipboard-landing-page-master)
 
 [Live site URL](https://p3lm3shka1.github.io/Clipboard-landing-page-master)
 
 
-##Project Setup & SCSS Compilation Process
+## Project Setup & SCSS Compilation Process
 
 This project was built using HTML, SCSS.
 
-##SCSS Workflow
+## SCSS Workflow
 
 All styling in this project is written in SCSS and compiled into a single ```style.css``` file.
 
-###Process of creating the SCSS files:
+### Process of creating the SCSS files:
 
 Split the styling into several SCSS partials such as:
 
