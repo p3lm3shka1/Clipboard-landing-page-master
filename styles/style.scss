@@ -12,7 +12,7 @@ body {
       rgba(255, 255, 255, 0) 40%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("/images/bg-header-desktop.png") center/cover no-repeat;
+    url("images/bg-header-desktop.png") center/cover no-repeat;
   padding: $pad-xl 0 $pad-m 0;
 
   @include flex;
@@ -416,5 +416,6 @@ body {
     }
   }
 }
+
 
 
